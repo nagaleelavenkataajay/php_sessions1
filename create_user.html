@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>User Registration</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.container {
+        max-width: 500px ;
+        margin: 20px auto;
+        margin-top: 100px;
+        padding: 20px ;
+        min-height: 300px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(201, 181, 181, 0.1);
+    }
+
+</style>
+</head>
+<body>
+    
+<div class="container">
+    <h1>User Registration</h1>
+    <form action= "create_user.php" method="POST">
+        First Name<input type="text" name="first_name" id="fn_id">
+ 
+        Last Name<input type="text" name="last_name" id="ln_id">
+ 
+        Country Code<select name="country_code" id="cn_id">
+            <option value="+91">+91</option>
+            <option value="+92">+92</option>
+        </select>
+ 
+        Contact Number<input type="text" name="contact_num" id="con_id">
+ 
+        Address<textarea name="address" id="address"></textarea>
+ 
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="m" id="gender_male">Male
+       
+        <input type="radio" name="gender" value="f" id="gender_female">Female
+       
+        <input type="radio" name="gender" value="o" id="gender_other">Others
+ 
+        Email<input type="email" name="email" id="email_id">
+ 
+       Birthdate <input type="date" name="birthdate" id="date">
+
+      
+        
+        Password<input type="password" name="pass1" id="PW_id" autocomplete="new-password">
+ 
+        Confirm Password<input type="password" name="confirm_password" id="CPW_id" autocomplete="new-password">
+ 
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
